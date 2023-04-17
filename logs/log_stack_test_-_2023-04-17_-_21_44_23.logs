@@ -1,0 +1,12 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/stack.test.js
+
+
+
+  Stack
+    ✔ should create a Stack with the methods
+
+
+  1 passing (6ms)
+

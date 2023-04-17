@@ -1,0 +1,22 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/stack.test.js
+
+
+
+  Stack
+    1) should create a Stack with the methods
+
+
+  0 passing (7ms)
+  1 failing
+
+  1) Stack
+       should create a Stack with the methods:
+     AssertionError: expected undefined to equal 7
+      at Context.<anonymous> (test\stack.test.js:15:12)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+
+
