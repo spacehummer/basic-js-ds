@@ -1,0 +1,78 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/remove-from-list.test.js
+
+
+
+  Remove from list
+---- Source data: ListNode {
+  value: 3,
+  next: ListNode { value: 1, next: ListNode { value: 2, next: [ListNode] } }
+} , 3
+---- Source data: ListNode {
+  value: 1,
+  next: ListNode { value: 2, next: ListNode { value: 3, next: [ListNode] } }
+} , 3
+---- Source data: ListNode {
+  value: 2,
+  next: ListNode { value: 3, next: ListNode { value: 4, next: [ListNode] } }
+} , 3
+---- Source data: ListNode {
+  value: 3,
+  next: ListNode { value: 4, next: ListNode { value: 5, next: null } }
+} , 3
+---- Source data: ListNode { value: 4, next: ListNode { value: 5, next: null } } , 3
+---- Source data: ListNode { value: 5, next: null } , 3
+---- New list: ListNode { value: 5, next: null }
+---- New list: ListNode { value: 4, next: ListNode { value: 5, next: null } }
+---- New list: ListNode {
+  value: 2,
+  next: ListNode { value: 4, next: ListNode { value: 5, next: null } }
+}
+---- New list: ListNode {
+  value: 1,
+  next: ListNode { value: 2, next: ListNode { value: 4, next: [ListNode] } }
+}
+    ✔ should return the list without values equal to k
+---- Source data: ListNode {
+  value: 1,
+  next: ListNode { value: 2, next: ListNode { value: 3, next: [ListNode] } }
+} , 3
+---- Source data: ListNode {
+  value: 2,
+  next: ListNode { value: 3, next: ListNode { value: 3, next: [ListNode] } }
+} , 3
+---- Source data: ListNode {
+  value: 3,
+  next: ListNode { value: 3, next: ListNode { value: 4, next: [ListNode] } }
+} , 3
+---- Source data: ListNode {
+  value: 3,
+  next: ListNode { value: 4, next: ListNode { value: 5, next: null } }
+} , 3
+---- Source data: ListNode { value: 4, next: ListNode { value: 5, next: null } } , 3
+---- Source data: ListNode { value: 5, next: null } , 3
+---- New list: ListNode { value: 5, next: null }
+---- New list: ListNode { value: 4, next: ListNode { value: 5, next: null } }
+---- New list: ListNode {
+  value: 2,
+  next: ListNode { value: 4, next: ListNode { value: 5, next: null } }
+}
+---- New list: ListNode {
+  value: 1,
+  next: ListNode { value: 2, next: ListNode { value: 4, next: [ListNode] } }
+}
+    ✔ should return the list without values equal to k (with double k)
+---- Source data: ListNode {
+  value: 1,
+  next: ListNode { value: 2, next: ListNode { value: 3, next: null } }
+} , 3
+---- Source data: ListNode { value: 2, next: ListNode { value: 3, next: null } } , 3
+---- Source data: ListNode { value: 3, next: null } , 3
+---- New list: ListNode { value: 2, next: null }
+---- New list: ListNode { value: 1, next: ListNode { value: 2, next: null } }
+    ✔ should return the list without values equal to k (with k at the end)
+
+
+  3 passing (17ms)
+
