@@ -1,0 +1,23 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/queue.test.js
+
+
+
+  Queue
+    1) should create a Queue with the methods
+    ✔ should return correct linked list
+
+
+  1 passing (12ms)
+  1 failing
+
+  1) Queue
+       should create a Queue with the methods:
+     AssertionError: expected ListNode{ value: 5, …(1) } to equal 5
+      at Context.<anonymous> (test\queue.test.js:18:12)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+
+
