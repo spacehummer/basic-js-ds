@@ -1,0 +1,121 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/binary-search-tree.test.js
+
+
+
+  Binary search tree
+    variable presence
+      ✔ class BinarySearchTree exists
+      ✔ correct inheritance
+      ✔ has methods
+    functional requirements
+      ✔ returns correct root if no value added
+      ✔ root works correctly some values were added
+      1) find existing values
+      ✔ find non-existing values
+      2) correctly checks presence of the values
+      3) remove & has works correctly
+      4) min works correctly
+      5) max works correctly
+    some additional tests
+      6) correctly find min & max
+      7) correctly find values
+      8) correctly remove values
+
+
+  6 passing (16ms)
+  8 failing
+
+  1) Binary search tree
+       functional requirements
+         find existing values:
+     TypeError: Cannot set properties of undefined (setting 'lastFoundNode')
+      at searchLocal (src\binary-search-tree.js:119:31)
+      at searchLocal (src\binary-search-tree.js:133:16)
+      at searchLocal (src\binary-search-tree.js:133:16)
+      at BinarySearchTree.has (src\binary-search-tree.js:104:12)
+      at BinarySearchTree.find (src\binary-search-tree.js:145:14)
+      at Context.<anonymous> (test\binary-search-tree.test.js:61:31)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  2) Binary search tree
+       functional requirements
+         correctly checks presence of the values:
+     TypeError: Cannot set properties of undefined (setting 'lastFoundNode')
+      at searchLocal (src\binary-search-tree.js:119:31)
+      at searchLocal (src\binary-search-tree.js:133:16)
+      at searchLocal (src\binary-search-tree.js:133:16)
+      at BinarySearchTree.has (src\binary-search-tree.js:104:12)
+      at Context.<anonymous> (test\binary-search-tree.test.js:92:31)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  3) Binary search tree
+       functional requirements
+         remove & has works correctly:
+     TypeError: Cannot set properties of undefined (setting 'lastFoundNode')
+      at searchLocal (src\binary-search-tree.js:119:31)
+      at searchLocal (src\binary-search-tree.js:133:16)
+      at BinarySearchTree.has (src\binary-search-tree.js:104:12)
+      at Context.<anonymous> (test\binary-search-tree.test.js:112:31)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  4) Binary search tree
+       functional requirements
+         min works correctly:
+     AssertionError: expected undefined to equal 1
+      at Context.<anonymous> (test\binary-search-tree.test.js:135:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  5) Binary search tree
+       functional requirements
+         max works correctly:
+     AssertionError: expected undefined to equal 54
+      at Context.<anonymous> (test\binary-search-tree.test.js:150:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  6) Binary search tree
+       some additional tests
+         correctly find min & max:
+     AssertionError: expected undefined to equal 6
+      at Context.<anonymous> (test\binary-search-tree.test.js:160:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  7) Binary search tree
+       some additional tests
+         correctly find values:
+     TypeError: Cannot set properties of undefined (setting 'lastFoundNode')
+      at searchLocal (src\binary-search-tree.js:119:31)
+      at searchLocal (src\binary-search-tree.js:133:16)
+      at BinarySearchTree.has (src\binary-search-tree.js:104:12)
+      at E:\Documents\Development\7_WEB\1_Learn\RS_School\Repos\basic-js-ds\test\binary-search-tree.test.js:168:53
+      at Array.every (<anonymous>)
+      at Context.<anonymous> (test\binary-search-tree.test.js:168:33)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  8) Binary search tree
+       some additional tests
+         correctly remove values:
+     TypeError: Cannot set properties of undefined (setting 'lastFoundNode')
+      at searchLocal (src\binary-search-tree.js:119:31)
+      at searchLocal (src\binary-search-tree.js:133:16)
+      at searchLocal (src\binary-search-tree.js:131:16)
+      at searchLocal (src\binary-search-tree.js:131:16)
+      at searchLocal (src\binary-search-tree.js:131:16)
+      at searchLocal (src\binary-search-tree.js:131:16)
+      at BinarySearchTree.has (src\binary-search-tree.js:104:12)
+      at E:\Documents\Development\7_WEB\1_Learn\RS_School\Repos\basic-js-ds\test\binary-search-tree.test.js:178:61
+      at Array.every (<anonymous>)
+      at Context.<anonymous> (test\binary-search-tree.test.js:178:41)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+
+

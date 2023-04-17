@@ -1,0 +1,56 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/binary-search-tree.test.js
+
+
+
+  Binary search tree
+    variable presence
+      ✔ class BinarySearchTree exists
+      ✔ correct inheritance
+      1) has methods
+    functional requirements
+      2) returns correct root if no value added
+      3) root works correctly some values were added
+      - find existing values
+      - find non-existing values
+      - correctly checks presence of the values
+      - remove & has works correctly
+      - min works correctly
+      - max works correctly
+    some additional tests
+      - correctly find min & max
+      - correctly find values
+      - correctly remove values
+
+
+  2 passing (16ms)
+  9 pending
+  3 failing
+
+  1) Binary search tree
+       variable presence
+         has methods:
+     AssertionError: expected BinarySearchTree{ root: null } to respond to 'root'
+      at Context.<anonymous> (test\binary-search-tree.test.js:26:27)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  2) Binary search tree
+       functional requirements
+         returns correct root if no value added:
+     TypeError: tree.root is not a function
+      at Context.<anonymous> (test\binary-search-tree.test.js:40:31)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  3) Binary search tree
+       functional requirements
+         root works correctly some values were added:
+     TypeError: tree.root is not a function
+      at Context.<anonymous> (test\binary-search-tree.test.js:48:31)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+
+

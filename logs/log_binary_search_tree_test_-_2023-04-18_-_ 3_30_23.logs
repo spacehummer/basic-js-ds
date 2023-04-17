@@ -1,0 +1,83 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/binary-search-tree.test.js
+
+
+
+  Binary search tree
+    variable presence
+      ✔ class BinarySearchTree exists
+      ✔ correct inheritance
+      ✔ has methods
+    functional requirements
+      ✔ returns correct root if no value added
+      ✔ root works correctly some values were added
+      ✔ find existing values
+      ✔ find non-existing values
+      ✔ correctly checks presence of the values
+      1) remove & has works correctly
+      2) min works correctly
+      3) max works correctly
+    some additional tests
+      4) correctly find min & max
+      ✔ correctly find values
+      5) correctly remove values
+
+
+  9 passing (16ms)
+  5 failing
+
+  1) Binary search tree
+       functional requirements
+         remove & has works correctly:
+
+      AssertionError: expected true to equal false
+      + expected - actual
+
+      -true
+      +false
+      
+      at Context.<anonymous> (test\binary-search-tree.test.js:112:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  2) Binary search tree
+       functional requirements
+         min works correctly:
+     AssertionError: expected undefined to equal 1
+      at Context.<anonymous> (test\binary-search-tree.test.js:135:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  3) Binary search tree
+       functional requirements
+         max works correctly:
+     AssertionError: expected undefined to equal 54
+      at Context.<anonymous> (test\binary-search-tree.test.js:150:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  4) Binary search tree
+       some additional tests
+         correctly find min & max:
+     AssertionError: expected undefined to equal 46
+      at Context.<anonymous> (test\binary-search-tree.test.js:160:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  5) Binary search tree
+       some additional tests
+         correctly remove values:
+
+      AssertionError: expected false to equal true
+      + expected - actual
+
+      -false
+      +true
+      
+      at Context.<anonymous> (test\binary-search-tree.test.js:178:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+
+
