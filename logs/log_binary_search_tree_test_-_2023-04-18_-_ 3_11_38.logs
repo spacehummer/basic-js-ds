@@ -1,0 +1,120 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/binary-search-tree.test.js
+
+null
+
+
+  Binary search tree
+    variable presence
+      ✔ class BinarySearchTree exists
+      ✔ correct inheritance
+      ✔ has methods
+    functional requirements
+      ✔ returns correct root if no value added
+      ✔ root works correctly some values were added
+      1) find existing values
+      ✔ find non-existing values
+      2) correctly checks presence of the values
+      3) remove & has works correctly
+      4) min works correctly
+      5) max works correctly
+    some additional tests
+      6) correctly find min & max
+      7) correctly find values
+      8) correctly remove values
+
+
+  6 passing (16ms)
+  8 failing
+
+  1) Binary search tree
+       functional requirements
+         find existing values:
+     TypeError: Cannot read properties of null (reading 'data')
+      at Context.<anonymous> (test\binary-search-tree.test.js:61:38)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  2) Binary search tree
+       functional requirements
+         correctly checks presence of the values:
+
+      AssertionError: expected false to equal true
+      + expected - actual
+
+      -false
+      +true
+      
+      at Context.<anonymous> (test\binary-search-tree.test.js:92:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  3) Binary search tree
+       functional requirements
+         remove & has works correctly:
+
+      AssertionError: expected false to equal true
+      + expected - actual
+
+      -false
+      +true
+      
+      at Context.<anonymous> (test\binary-search-tree.test.js:115:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  4) Binary search tree
+       functional requirements
+         min works correctly:
+     AssertionError: expected undefined to equal 1
+      at Context.<anonymous> (test\binary-search-tree.test.js:135:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  5) Binary search tree
+       functional requirements
+         max works correctly:
+     AssertionError: expected undefined to equal 54
+      at Context.<anonymous> (test\binary-search-tree.test.js:150:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  6) Binary search tree
+       some additional tests
+         correctly find min & max:
+     AssertionError: expected undefined to equal 20
+      at Context.<anonymous> (test\binary-search-tree.test.js:160:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  7) Binary search tree
+       some additional tests
+         correctly find values:
+
+      AssertionError: expected false to equal true
+      + expected - actual
+
+      -false
+      +true
+      
+      at Context.<anonymous> (test\binary-search-tree.test.js:168:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+  8) Binary search tree
+       some additional tests
+         correctly remove values:
+
+      AssertionError: expected false to equal true
+      + expected - actual
+
+      -false
+      +true
+      
+      at Context.<anonymous> (test\binary-search-tree.test.js:179:14)
+      at Context.test (extensions\it-optional.js:21:12)
+      at process.processImmediate (node:internal/timers:471:21)
+
+
+
