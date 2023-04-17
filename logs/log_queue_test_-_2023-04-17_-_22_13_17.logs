@@ -1,0 +1,14 @@
+
+> basic-js-ds@1.0.0 test
+> mocha ./test/queue.test.js
+
+
+
+  Queue
+    - should create a Queue with the methods
+    - should return correct linked list
+
+
+  0 passing (8ms)
+  2 pending
+
